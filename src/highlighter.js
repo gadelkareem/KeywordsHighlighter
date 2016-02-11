@@ -85,7 +85,7 @@ var run = function (enabled) {
 
 
 $(function () {
-  chrome.storage.sync.get('enabled', function (result) {
+  chrome.storage.local.get('enabled', function (result) {
     enabled = typeof result.enabled != 'undefined' ? result.enabled : true;
     run(enabled);
     chrome.storage.onChanged.addListener(function (changes, namespace) {
