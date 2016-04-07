@@ -52,7 +52,7 @@ var run = function (enabled) {
   function highlighter(keywords) {
     keywords = $.trim(keywords);
     var options = {
-      exact: "whole"
+      exact: "exact"
     };
     if (keywords != "") {
       options.keys = keywords;
